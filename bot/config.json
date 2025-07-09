@@ -1,0 +1,55 @@
+{
+  "log": {
+    "level": "info"
+  },
+  "inbounds": [
+    {
+      "type": "vless",
+      "tag": "vless-in",
+      "listen": "0.0.0.0",
+      "listen_port": 8443,
+      "users": [
+        {
+          "name": "user@test",
+          "uuid": "ca2b37f6-42a2-4dd0-96f2-0479d0e03fae",
+          "flow": ""
+        },
+        {
+          "name": "manual1",
+          "uuid": "d17b1e99-5d04-4fef-ae45-03c34c5618ea",
+          "flow": ""
+        },
+        {
+          "name": "manual2",
+          "uuid": "4d87422d-fbb0-4a68-b407-c7983182fb5b",
+          "flow": ""
+        },
+        {
+          "name": "manual3",
+          "uuid": "e28d94d9-7398-461f-8fcc-0f8111fb92f1",
+          "flow": ""
+        },
+        {
+          "name": "manual4",
+          "uuid": "f929927d-b8b4-4865-a2e1-8f8810fb46b5",
+          "flow": ""
+        },
+        {
+          "name": "manual5",
+          "uuid": "44025fbf-2448-4880-921d-b2258b5b0949",
+          "flow": ""
+        },
+        {
+          "name": "manual6",
+          "uuid": "30cac349-4c20-40e3-8345-0333074f4820",
+          "flow": ""
+        }
+      ]
+    }
+  ],
+  "outbounds": [
+    {
+      "type": "direct"
+    }
+  ]
+}
