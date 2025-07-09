@@ -1,0 +1,24 @@
+version: '3.8'
+
+services:
+  db:
+    image: postgres:15
+    restart: always
+    environment:
+      POSTGRES_USER: didi
+      POSTGRES_PASSWORD: 989Popikus
+      POSTGRES_DB: base
+    ports:
+      - "5432:5432"
+
+  bot:
+    build: .
+    restart: always
+    volumes:
+      - .:/app
+      - /etc/sing-box/config.json:/etc/sing-box/config.json  # ← используем реальный путь
+    env_file:
+      - .env
+    depends_on:
+      - db
+

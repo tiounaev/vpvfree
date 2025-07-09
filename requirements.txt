@@ -1,0 +1,8 @@
+aiogram==3.0.0b7
+pydantic
+apscheduler
+python-dotenv
+filelock
+psycopg2-binary
+asyncpg
+SQLAlchemy
